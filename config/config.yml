@@ -1,0 +1,19 @@
+app:
+  name: 'documents'
+  version: '1.0.0'
+
+http:
+  port: '8080'
+
+logger:
+  log_level: 'debug'
+  rollbar_env: 'documents'
+
+postgres:
+  PG_URL: postgresql://postgres:1747@localhost:5432/documents?sslmode=disable
+
+cache:
+  default_expiration: '10m'
+  cleanup_interval: '10m'
+
+admin_token: admin_token
